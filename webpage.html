@@ -28,16 +28,53 @@
       </div>
     </div>
     <!--container-->
-    <div class="image container">
-      <img src="bg.jpg" class="image-container" />
+    <div>
+      <img src="cm.jpg" class="image-container" />
       <img src="coin.jpg" class="image-container" />
       <img src="money.jpg" class="image-container" />
+      <img src="mm.jpg" class="image-container" />
     </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("image-container");
+        var dots = document.getElementsByClassName("image-container");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 7 seconds
+      }
+    </script>
     <div class="speciality">
-      <div class="box1"><h1>Introduction</h1></div>
-      <div class="box1"><h1>Our services</h1></div>
-      <div class="box1"><h1>Our speciality</h1></div>
-      <div class="box1"><h1>More information</h1></div>
+      <div class="box1">
+        <img src="pexel1.jpg" />
+      </div>
+      <div class="box1"><img src="pexel2.jpg" /></div>
+      <div class="box1">
+        <h1><img src="pexel5.jpg" /></h1>
+      </div>
+      <div class="box1"><img src="pexel4.jpg" /></div>
+    </div>
+    <div class="speciality2">
+      <div class="box2">
+        <div class="circle"><img src="bems.jpg" /></div>
+      </div>
+      <div class="box2">
+        <div class="description"></div>
+        <div class="circle"><img src="bems.jpg" /></div>
+      </div>
     </div>
     <!--footer-->
     <footer class="footer bg-dark py-5">
