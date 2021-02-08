@@ -35,7 +35,7 @@ p {
 .navbar {
   background-color: rgb(96, 96, 160);
   color: #fff;
-  height: 100px;
+  height: 200px;
 }
 
 .navbar ul {
@@ -58,7 +58,7 @@ p {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
@@ -188,4 +188,8 @@ p {
 
 .footer h1 {
   font-size: 50px;
+}
+
+.logo {
+  height: 100%;
 }
